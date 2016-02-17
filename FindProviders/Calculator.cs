@@ -1,6 +1,8 @@
 ﻿namespace FindProviders
 {
     using System;
+    using System.Net;
+
     public class Calculator
     {
         public bool IsWithin(Location myLocation, Location providerLocation, int radius)
@@ -36,6 +38,7 @@
                     dist = dist * 0.8684;
                 }
                 return (dist);
+
             }
 
             private double deg2rad(double deg)
